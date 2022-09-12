@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <button id="menuBurger"><img src="./public/icon-menu.svg" alt=""></button>
+    <button id="logo" class="bg-none br-none"><img src="./public/logo.svg" alt=""></button>
+    <ul id="mainNav">
+      <li><button class="bg-none br-none">Collections</button></li>
+      <li><button class="bg-none br-none">Men</button></li>
+      <li class="active-link"><button class="bg-none br-none">Women</button></li>
+      <li><button class="bg-none br-none">About</button></li>
+      <li><button class="bg-none br-none">Contact</button></li>
+    </ul>
+
+    <ul id="secondNav">
+      <li><button id="btnCart" class="btn-cart bg-none br-none"><img src="./public/icon-cart.svg" alt=""><span id="itemNumber"></span></button></li>
+      <li><button class="btn-avatar bg-none br-none"><img src="./public/image-avatar.png" alt=""></button></li>
+    </ul>
+
+    <div id="cart">
+
+      <h3>Cart</h3>
+
+      <p id="cartContent">Your cart is empty !!!</p>
+
+    </div>
+  </header>
+
+  <main>
+
+    <aside>
+
+      <div class="bigImg"><img id="IMG" src="./public/image-product-1.jpg" alt=""></div>
+      <div class="div-img">
+        <div class="lilImg"><img class="image-thumbnail" src="./public/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="lilImg"><img class="image-thumbnail" src="./public/image-product-2-thumbnail.jpg" alt=""></div>
+        <div class="lilImg"><img class="image-thumbnail" src="./public/image-product-3-thumbnail.jpg" alt=""></div>
+        <div class="lilImg"><img class="image-thumbnail" src="./public/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+
+      <div id="sectionDiv">
+        <section>
+
+          <button id="close" class="bg-none br-none"><img src="./public/icon-close.svg" alt=""></button>
+
+          <div id="sectionBigImg">
+
+            <button id="arrowLeft"><img src="./public/icon-previous.svg" alt=""></button>
+
+            <img id="sectionImg" src="./public/image-product-1.jpg" alt="">
+
+            <button id="arrowRight"><img src="./public/icon-next.svg" alt=""></button>
+
+          </div>
+
+          <div class="section-div-img">
+            <div class="section-lilImg"><img class="section-image-thumbnail" src="./public/image-product-1-thumbnail.jpg" alt=""></div>
+            <div class="section-lilImg"><img class="section-image-thumbnail" src="./public/image-product-2-thumbnail.jpg" alt=""></div>
+            <div class="section-lilImg"><img class="section-image-thumbnail" src="./public/image-product-3-thumbnail.jpg" alt=""></div>
+            <div class="section-lilImg"><img class="section-image-thumbnail" src="./public/image-product-4-thumbnail.jpg" alt=""></div>
+          </div>
+        </section>
+      </div>
+
+    </aside>
+
+    <article>
+
+      <h1>Sneaker Company</h1>
+
+      <h2>Fall Limited Edition Sneakers</h2>
+
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <strong>$125.00</strong><b>50%</b>
+      <span>$250.00</span>
+
+      <div class="flex">
+        <div id="choice">
+          <button id="moins" class="moins bg-none br-none"><img src="./public/icon-minus.svg" alt=""></button>
+          <input type="tel" name="" id="number" value="0">
+          <button id="plus" class="plus bg-none br-none"><img src="./public/icon-plus.svg" alt=""></button>
+        </div>
+
+        <button id="addToCart"><img src="./public/icon-cart.svg" alt=""> Add to cart</button>
+      </div>
+    </article>
+
+    <div id="hiddenMenu">
+      <button id="hiddenClose" class="bg-none br-none"><img src="./public/icon-close.svg" alt=""></button>
+
+      <ul id="hiddenMainNav">
+        <li><button class="bg-none br-none">Collections</button></li>
+        <li><button class="bg-none br-none">Men</button></li>
+        <li class="active-link"><button class="bg-none br-none">Women</button></li>
+        <li><button class="bg-none br-none">About</button></li>
+        <li><button class="bg-none br-none">Contact</button></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
